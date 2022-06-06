@@ -4,7 +4,7 @@ function generateStars (){
   const container = document.querySelector('.container');
   const stars = document.createElement('div');
   
-  let size = Math.random() * 10;
+  let size = Math.random() * 8;
     
   
   stars.style.width = size + 'px';
@@ -22,6 +22,6 @@ function generateStars (){
   
     setTimeout(()=>{
       stars.remove()
-    }, 3000);
+    }, 5000);
 }
 setInterval(generateStars, 500);
